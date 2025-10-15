@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'Swen755.Group3'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jsoup:jsoup:1.17.1'
+}
+
+application {
+    mainClass = 'Main'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+// Create a run task that works like java Main
+tasks.register('runCrawler', JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'Main'
+    standardInput = System.in
+}
