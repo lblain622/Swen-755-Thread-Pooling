@@ -31,8 +31,9 @@ The project highlights concepts such as:
 
 ## Class Diagram
 
-![alt text](https://github.com/lblain622/Swen-755-Thread-Pooling/tree/main/assets/ClassDiagram.png)
+![Class Diagram](https://raw.githubusercontent.com/lblain622/Swen-755-Thread-Pooling/main/assets/ClassDiagram.png)
 
+---
 
 ## Libraries Used  
 
