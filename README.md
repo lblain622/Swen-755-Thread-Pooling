@@ -115,5 +115,6 @@ Discovered pages:
 ## AI Usage
 - We used ChatGPT and Grammarly to help phrase some parts of the readme.
 - We used ChatGPT to help with formatting assistance for the readme markdown file.
+- We used ChatGPT to help with Gradle Configuration for JSOUP
 
 ---

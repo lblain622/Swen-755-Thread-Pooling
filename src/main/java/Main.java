@@ -21,15 +21,14 @@ public class Main {
         System.out.println("Crawling: " + url);
         System.out.println("Using 10 threads...\n");
 
-        // Setup
+
         Set<String> visitedUrls = Collections.synchronizedSet(new HashSet<>());
         CrawlerThreadPool pool = new CrawlerThreadPool(10);
 
-        // Start with initial URL
         visitedUrls.add(url);
         pool.submit(new CrawlerTask(url, url, visitedUrls, pool));
 
-        // Let it run for a while
+
         try {
             Thread.sleep(10000); // Run for 10 seconds
 
@@ -37,11 +36,11 @@ public class Main {
             System.out.println("Pages found: " + visitedUrls.size());
             System.out.println("Pages in queue: " + pool.getQueueSize());
 
-            // Show some discovered pages
+
             System.out.println("\nDiscovered pages:");
             int count = 0;
             for (String page : visitedUrls) {
-                if (count++ < 10) { // Show first 10 pages
+                if (count++ < 10) { // Show first 10 pages visited
                     System.out.println("  " + page);
                 }
             }

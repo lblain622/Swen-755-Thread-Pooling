@@ -3,7 +3,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 
 public class CrawlerThreadPool{
-    private BlockingQueue<Runnable> taskQueue;
+    private final BlockingQueue<Runnable> taskQueue;
     private final Worker[] workingThreads;
     private volatile boolean isRunning;
 
