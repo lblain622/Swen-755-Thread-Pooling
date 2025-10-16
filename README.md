@@ -29,6 +29,11 @@ The project highlights concepts such as:
 
 ---
 
+## Class Diagram
+
+![alt text](https://github.com/lblain622/Swen-755-Thread-Pooling/tree/main/assets/ClassDiagram.png)
+
+
 ## Libraries Used  
 
 The project uses **JSoup** for fetching and parsing HTML pages.
